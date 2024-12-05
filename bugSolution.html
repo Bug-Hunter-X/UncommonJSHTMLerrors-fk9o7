@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // Wait for the DOM to fully load before accessing elements
+    window.addEventListener('DOMContentLoaded', (event) => {
+      document.getElementById("myDiv").innerHTML = "This text will appear";
+      document.getElementById("myDiv").style.color = "red";
+      // Correct way to add event listener
+      document.getElementById("myDiv").addEventListener('click', myFunction);
+    });
+
+    function myFunction() {
+      alert("This is correct");
+    }
+  </script>
+</body>
+</html>
