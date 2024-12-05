@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // Trying to access an element that doesn't exist yet
+    document.getElementById("myDiv").innerHTML = "This text will not appear";  
+    // Missing semicolon
+    document.getElementById("myDiv").style.color = "red"
+    //Wrong way to add event listener 
+    document.getElementById("myDiv").onclick = myFunction()
+    function myFunction(){
+        alert("This is wrong")
+    }
+
+  </script>
+</body>
+</html>
